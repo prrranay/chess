@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname,"public")));
 app.set('view engine', 'ejs'); 
 
 app.get('/', function(req, res){
-    res.send("hello world!");   
+    res.render('index');   
 })
 
 io.on("connection", function(uniquesocket){
